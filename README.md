@@ -3,9 +3,17 @@
 BÁO CÁO DỰ ÁN INSTAGRAM CLONE :
 Ứng dụng sử dụng API Firbase và các thư viện trên github
 Các chức năng được xây dựng trong từng giao diện :
+
+
 STARTACTIVITY : Cho phép user lựa chọn đăng nhập hay đăng ký
+
+
 REGISTERACTIVITY : Cho phép user đăng ký / tạo tài khoản
+
+
 LOGINACTIVITY : Cho phép user đăng nhập vào hệ thống
+
+
 MAINACTIVITY : Sử dụng BOTTOM NAVIGATION trong đó :
 1)Home Fragment :Hiện Story và Post của user và những người user theo dõi .
 2)Click vào Post có chức năng Report .Đối với chủ bài viết có thêm quyền edit title và delete bài viết .
@@ -17,7 +25,10 @@ MAINACTIVITY : Sử dụng BOTTOM NAVIGATION trong đó :
 SearchFragment : Hiện tất cả các user và các hashtag ,cho phép tìm kiếm người dùng và hashtag có trong các bài viết trên thanh search bar .
 1)Mặc định nút Follow của chính tài khoản của user đó ở trạng tháI GONE ,các user khác ở trạng thái FOLLOW ,click lần 1 chuyển sang FOLLOWING và add user đó vào danh sách các user được user hiện tại theo dõi ,lần 2 quay lại trạng thái FOLLOW,và xóa user vừa add khỏi danh sách trên .
 2)Sau khi nút chuyển sang FOLLOWING ngay lập tức tạo thông báo về người theo dõi cho user có nút FOLLOWING đó ,và chuyển vào NotificationFragmnet của người đó và chuyển data vào FOLLOWERSACTIVITY.  
+
+
 POSTACTIVITY : Sử dụng để đăng bài viết kèm title và ảnh được chụp hoặc lấy từ thư viện .
+
 NotificationFragment : (Implicit Fragment )
 1)Cho phép nhận data từ các Fragment phía trên để hiện thông báo ,sử dụng Recycle View hiện danh sách thông báo .
 2)Có 3 loại thông báo : Thông báo về Comment ,về người like và người theo dõi .
