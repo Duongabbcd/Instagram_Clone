@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:id="@+id/activity_main">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?android:attr/windowBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="gone"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="180dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/instagram_logo"
+                    android:id="@+id/logo"
+                    android:layout_marginLeft="-30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="180dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/instagram_logo_white"
+                    android:id="@+id/logo_white"
+                    android:layout_marginLeft="-30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/total_message"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:id="@+id/unreads"
+                        android:gravity="center"
+                        android:layout_alignParentEnd="true"
+                        android:text=""
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:visibility="gone"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/red_ball"/>
+
+
+                    <ImageView
+                        android:id="@+id/message"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="39dp"
+                        android:layout_height="33dp"
+                        android:layout_alignParentEnd="true"
+                         android:layout_centerVertical="true"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginRight="36dp"
+                        android:src="@drawable/ic_inbox" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:id="@+id/sun"
+                    android:layout_toStartOf="@+id/switcher"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/sun"/>
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:id="@+id/moon"
+                    android:layout_toStartOf="@+id/switcher"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/moon"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/switcher"
+                    android:layout_toStartOf="@+id/total_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:visibility="visible"
+        android:layout_below="@+id/bar_main"
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomer">
+
+    </FrameLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/bottomer"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/main_home"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_home"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:id="@+id/main_search"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:id="@+id/main_post"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_add"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+
+         <RelativeLayout
+             android:gravity="center"
+             android:layout_weight="0.5"
+             android:layout_width="wrap_content"
+             android:layout_height="50dp">
+
+             <TextView
+                 android:gravity="center"
+                 android:text=""
+                 android:textSize="10dp"
+                 android:textColor="@color/white"
+                 android:id="@+id/totaler"
+                 android:layout_marginTop="-5dp"
+                 android:layout_marginStart="20dp"
+                 android:visibility="gone"
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 android:background="@drawable/red_ball"/>
+
+             <ImageView
+                 android:id="@+id/main_notif"
+                 android:layout_weight="0.5"
+                 android:src="@drawable/ic_heart"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp" />
+         </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_weight="0.3"
+      android:layout_width="30dp"
+      android:layout_height="30dp">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_marginRight="10dp"
+          android:id="@+id/main_pro"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="?attr/background_color"
+          app:civ_border_width="2dp"
+          app:civ_border_color="#128DEF"/>
+        </RelativeLayout>
+
+
+        </LinearLayout>
+
+</RelativeLayout>
+

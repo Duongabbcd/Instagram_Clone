@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FollowersActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"/>
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:background="?attr/text_color"
+        android:id="@+id/imgv1"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/imgv1"
+        android:id="@+id/linear_follow"
+        android:padding="5dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"/>
+
+        <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+            android:textColor="?attr/text_color"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:text=""
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/edtSearch"
+            android:paddingStart="5dp"
+            android:background="@android:color/transparent"
+            android:hint="Search..."
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:background="?attr/text_color"
+        android:id="@+id/imgv2"
+        android:layout_below="@id/linear_follow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgv2"
+        android:id="@+id/recycler_view"/>
+
+</RelativeLayout>

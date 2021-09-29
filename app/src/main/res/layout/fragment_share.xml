@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ShareFragment">
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/tree"
+            android:id="@+id/share_photo"
+            android:layout_alignParentStart="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+
+        <EditText
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/inputter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Write something before send, please ! "
+            android:textSize="12sp"
+            android:background="@android:color/transparent"
+            android:layout_toEndOf="@id/share_photo"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:background="?attr/text_color"
+        android:layout_marginTop="5dp"
+        android:id="@+id/spacer"
+        android:layout_below="@id/body"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/spacer"
+        android:id="@+id/layout_search"
+        android:padding="5dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/start_searching"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"/>
+
+
+        <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+            android:textColor="?attr/text_color"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_toEndOf="@+id/start_searching"
+            android:text="ads"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_input"
+            android:paddingStart="5dp"
+            android:background="@android:color/transparent"
+            android:hint="Search..."
+            android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_share"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

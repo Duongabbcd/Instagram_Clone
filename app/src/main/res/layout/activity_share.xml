@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ShareActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/share_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/canceler"
+            android:text="Back"
+            android:textColor="?attr/text_color"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:background="?attr/text_color"
+        android:layout_marginTop="5dp"
+        android:id="@+id/spacer1"
+        android:layout_below="@id/share_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+<FrameLayout
+    android:id="@+id/frame_share"
+    android:layout_below="@+id/spacer1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+</RelativeLayout>

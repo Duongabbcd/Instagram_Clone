@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+     android:checkableBehavior="single">
+    <item
+        android:id="@+id/edit_profile_account"
+        android:icon="@drawable/ic_edit"
+        android:title="Edit Profile" />
+    <item
+        android:id="@+id/old_story"
+        android:icon="@drawable/ic_old_story"
+        android:title="Old Story"
+        />
+    <item
+        android:id="@+id/reset_password"
+        android:icon="@drawable/ic_reset_password"
+        android:title="Reset Password" />
+    <item
+        android:id="@+id/qr_code"
+        android:icon="@drawable/ic_qr_code"
+        android:title="QR Code" />
+    <item
+        android:id="@+id/log_out"
+        android:icon="@drawable/ic_logout"
+        android:title="Log out" />
+
+
+</group>
+</menu>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/register_layout"
+    android:background="@drawable/background_animation"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/instagram_logo"/>
+
+    <EditText
+        android:id="@+id/re_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/cardo"
+        android:hint="Username :"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:hint="Fullname"
+        android:paddingStart="15dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cardo"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/re_name"/>
+
+    <EditText
+        tools:cornerRadius="20dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cardo"
+        android:textColor="@color/black"
+        android:paddingStart="15dp"
+        android:hint="Email :"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/re_email"/>
+
+    <EditText
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cardo"
+        android:textColor="@color/black"
+        android:paddingStart="15dp"
+        android:hint="Password:"
+        android:id="@+id/re_password"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_background"/>
+
+    <CheckBox
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/re_hidePass"
+        android:text="Show Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/re_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:padding="10dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/teal_200"
+        tools:cornerRadius="20dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:fontFamily="cursive"
+        android:id="@+id/re_loginUser"
+        android:text="Already have an accout ? Let's log in"/>
+
+</LinearLayout>
